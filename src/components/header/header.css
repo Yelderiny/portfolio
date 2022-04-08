@@ -1,0 +1,31 @@
+header {
+    height: 100vh;
+    padding-top: 7rem; /* make space from the top */
+    overflow: hidden; /* hide everything after the height limit */
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ------------CTA------------ */
+.cta {
+    margin-top: 2.5rem; /* create space above */
+    display: flex;
+    gap: 1.2rem; /* create space between */
+    justify-content: center; /* center */
+}
+
+/* -------------HEADER SOCIALS------------- */
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
