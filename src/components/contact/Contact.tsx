@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, {useRef} from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from "react-icons/bs"
@@ -15,10 +15,10 @@ const Contact = () => {
                 console.log(result.text)
             }, (error) => {
                 console.log(error.text)
-            });
+            })
 
         e.target.reset()
-    };
+    }
 
     return (
         <section id="contact">
@@ -43,12 +43,12 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Your Full Name" required/>
                     <input type="e-Mail" name="e-Mail" placeholder="Your e-Mail" required/>
-                    <textarea name="message" rows={7} placeholder="Your Message" required> </textarea>
+                    <textarea name="message" rows={7} placeholder="Your Message" required/>
                     <button type="submit" className="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default Contact
